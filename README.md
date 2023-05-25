@@ -19,3 +19,9 @@ As portas usadas são:
 3306 para o banco
 3030 para o frontend
 3001 para o backend
+
+# Informações
+As imagens dos projetos estão no docker-hub
+Caso queira subir separadamente as aplicações user o comando `docker-compose up` estando dentro da pasta do backend para subir o banco, e depois rode `yarn start`
+Para subir o frontend basta estar dentro da pasta e rodar `yarn start`
+Não se esqueça de instalar as dependencias usando `yarn` em ambos as pastas
