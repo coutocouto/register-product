@@ -16,12 +16,16 @@ Use o comando `docker-compose up` e todos os endpoints vao estar disponiveis com
 
 # Config
 As portas usadas são: 
-3306 para o banco
-3030 para o frontend
-3001 para o backend
+banco =  http://localhost:3306 
+frontend = http://localhost:3030
+backend = http://127.0.0.1:3001 
 
 # Informações
+o usuario padrão e:
+email: felipe.couto@claranet.com
+senha: @claranet
+
 As imagens dos projetos estão no docker-hub
 Caso queira subir separadamente as aplicações user o comando `docker-compose up` estando dentro da pasta do backend para subir o banco, e depois rode `yarn start`
 Para subir o frontend basta estar dentro da pasta e rodar `yarn start`
-Não se esqueça de instalar as dependencias usando `yarn` em ambos as pastas
+Não se esqueça de instalar as dependencias usando `yarn` em ambas as pastas
