@@ -55,20 +55,27 @@ const Form = ({ onEdit, setOnEdit }) => {
     { logged &&
       <Grid container gap={2}>
       <TextField
+            required
             label="Nome"
             variant="outlined"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <TextField
+            required
             label="Descrição"
             variant="outlined"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
           <TextField
+            required
             label="Preço"
+            type="number"
             variant="outlined"
+            InputLabelProps={{
+              shrink: true
+            }}
             value={price}
             onChange={(e) => setPrice(e.target.value)}
           />
